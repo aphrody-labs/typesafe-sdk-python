@@ -2,4 +2,4 @@
 
 from importlib.metadata import version
 
-__version__ = version("typesafe-sdk")
+__version__ = version("aphrody-typesafe-sdk")

@@ -1,6 +1,6 @@
 [project]
-name = "typesafe-sdk"
-version = "0.7.4"
+name = "aphrody-typesafe-sdk"
+version = "0.7.5"
 description = "Python SDK for TypeSafe AI API."
 readme = "README.md"
 license = "MIT"
@@ -49,15 +49,18 @@ http2 = [
 ]
 
 [project.urls]
-Homepage = "https://typesafe.ai"
-Documentation = "https://docs.typesafe.ai/sdk/python/"
-Changelog = "https://docs.typesafe.ai/sdk/python/changelog/"
-Repository = "https://github.com/typesafe-ai/typesafe-sdk-python"
-Issues = "https://github.com/typesafe-ai/typesafe-sdk-python/issues"
+Homepage = "https://github.com/aphrody-labs/typesafe-sdk-python"
+Documentation = "https://github.com/aphrody-labs/typesafe-sdk-python#readme"
+Changelog = "https://github.com/aphrody-labs/typesafe-sdk-python/blob/main/docs/changelog.md"
+Repository = "https://github.com/aphrody-labs/typesafe-sdk-python"
+Issues = "https://github.com/aphrody-labs/typesafe-sdk-python/issues"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "typesafe_sdk"
 
 [dependency-groups]
 dev = [

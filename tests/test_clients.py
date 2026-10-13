@@ -410,7 +410,7 @@ async def test_headers_timeout_and_logging(clients: ClientFactory, caplog: pytes
         assert str(request.url) == "https://example.test/prefix/v1/systemone"
         assert request.headers["authorization"] == "Bearer test-key"
         assert request.headers["accept"] == "application/json"
-        assert request.headers["user-agent"] == f"typesafe-sdk/{version('typesafe-sdk')}"
+        assert request.headers["user-agent"] == f"typesafe-sdk/{version('aphrody-typesafe-sdk')}"
         assert request.headers["x-typesafe-sdk"] == request.headers["user-agent"]
         assert request.headers["x-typesafe-runtime"].startswith("python/")
         assert "x-typesafe-retry-count" not in request.headers
